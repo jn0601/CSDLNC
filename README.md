@@ -3,7 +3,7 @@
 Đồ án môn học: **Cơ Sở Dữ Liệu Nâng Cao**  
 Hệ thống quản lý bán hàng với đầy đủ chức năng CRUD cho khách hàng, nhân viên, sản phẩm, hóa đơn và chi tiết hóa đơn.
 
-[![Laravel](https://img.shields.io/badge/Laravel-11.x-red.svg)](https://laravel.com)
+[![Laravel](https://img.shields.io/badge/Laravel-12.48.1-red.svg)](https://laravel.com)
 [![React](https://img.shields.io/badge/React-18.x-blue.svg)](https://reactjs.org)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.x-38B2AC.svg)](https://tailwindcss.com)
 [![SQL Server](https://img.shields.io/badge/SQL%20Server-Express-CC2927.svg)](https://www.microsoft.com/sql-server)
@@ -25,7 +25,7 @@ Hệ thống quản lý bán hàng với đầy đủ chức năng CRUD cho khá
 
 ## Giới Thiệu
 
-Hệ thống quản lý bán hàng được xây dựng với Laravel 11 và React 18, sử dụng Inertia.js để kết nối giữa backend và frontend. Dự án kết nối với SQL Server Express và cung cấp giao diện quản trị hoàn chỉnh để quản lý:
+Hệ thống quản lý bán hàng được xây dựng với Laravel 12.48.1 và React 18, sử dụng Inertia.js để kết nối giữa backend và frontend. Dự án kết nối với SQL Server Express và cung cấp giao diện quản trị hoàn chỉnh để quản lý:
 
 - **Khách Hàng** - Thông tin khách hàng, doanh số tự động
 - **Nhân Viên** - Quản lý nhân viên bán hàng
@@ -56,7 +56,7 @@ Hệ thống quản lý bán hàng được xây dựng với Laravel 11 và Rea
 
 ## 🛠 Công Nghệ
 
-- **Laravel 11** + **React 18** + **Inertia.js**
+- **Laravel 12.48.1** + **React 18** + **Inertia.js**
 - **Tailwind CSS 4** + **Headless UI** + **Vite**
 - **SQL Server Express** + **PHPUnit/Pest**
 
@@ -171,7 +171,7 @@ CREATE TABLE CTHD (
 ```
 </details>
 
-## 🧪 Testing
+## Testing
 
 Chạy automated tests:
 ```bash
