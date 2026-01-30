@@ -213,11 +213,6 @@ npm run build
 php artisan serve --port=8080
 ```
 
-## Liên Hệ & Hỗ Trợ
-
-- **Email:** [your-email@example.com]
-- **GitHub Issues:** [https://github.com/[your-username]/laravel_CSDLNC/issues](https://github.com/[your-username]/laravel_CSDLNC/issues)
-
 ## License
 
 MIT License - xem file [LICENSE](LICENSE) để biết thêm chi tiết.
