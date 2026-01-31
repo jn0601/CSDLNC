@@ -72,14 +72,16 @@ class HoaDonController extends Controller
 
     public function edit(string $id)
     {
-        $hoaDon = HoaDon::findOrFail($id);
+        $hoaDon = HoaDon::with(['chiTietHoaDons.sanPham'])->findOrFail($id);
         $khachHangs = KhachHang::orderBy('MAKH')->get();
         $nhanViens = NhanVien::orderBy('MANV')->get();
+        $sanPhams = \App\Models\SanPham::orderBy('MASP')->get();
         
         return Inertia::render('HoaDon/Edit', [
             'hoaDon' => $hoaDon,
             'khachHangs' => $khachHangs,
-            'nhanViens' => $nhanViens
+            'nhanViens' => $nhanViens,
+            'sanPhams' => $sanPhams
         ]);
     }
 

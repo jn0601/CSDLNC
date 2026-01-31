@@ -72,34 +72,13 @@ export default function Index({ chiTietHoaDons }) {
                                                             >
                                                                 Sửa
                                                             </Link>
-                                                            <form
-                                                                method="POST"
-                                                                action={route('chi-tiet-hoa-don.destroy', [
+                                                            <DeleteButton
+                                                                href={route('chi-tiet-hoa-don.destroy', [
                                                                     ct.SOHD,
                                                                     ct.MASP,
                                                                 ])}
-                                                                onSubmit={(e) => {
-                                                                    if (
-                                                                        !confirm(
-                                                                            'Bạn có chắc chắn muốn xóa?'
-                                                                        )
-                                                                    ) {
-                                                                        e.preventDefault();
-                                                                    }
-                                                                }}
-                                                            >
-                                                                <input
-                                                                    type="hidden"
-                                                                    name="_method"
-                                                                    value="DELETE"
-                                                                />
-                                                                <button
-                                                                    type="submit"
-                                                                    className="rounded-md bg-red-600 px-3 py-1 text-xs font-semibold text-white shadow-sm hover:bg-red-500"
-                                                                >
-                                                                    Xóa
-                                                                </button>
-                                                            </form>
+                                                                warningMessage={`Xóa chi tiết sản phẩm "${ct.san_pham?.TENSP || ct.MASP}" khỏi hóa đơn ${ct.SOHD}?`}
+                                                            />
                                                         </div>
                                                     </td>
                                                 </tr>
